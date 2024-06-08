@@ -1,0 +1,33 @@
+{
+  "name": "recaptcha",
+  "version": "0.0.0",
+  "description": "Recaptcha with focus on promises to enable continuous flows for various libraries like React and Vue",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "core": "npm run --workspace=@recaptcha/core",
+    "react": "npm run --workspace=@recaptcha/react",
+    "vue": "npm run --workspace=@recaptcha/vue",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meiyerDev/recaptcha.git"
+  },
+  "keywords": [
+    "recaptcha"
+  ],
+  "author": "Meiyer Jaimes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/meiyerDev/recaptcha/issues"
+  },
+  "homepage": "https://github.com/meiyerDev/recaptcha#readme",
+  "dependencies": {
+    "@recaptcha/core": "^0.0.0",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4"
+  }
+}

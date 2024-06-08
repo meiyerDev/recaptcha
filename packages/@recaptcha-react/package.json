@@ -1,0 +1,44 @@
+{
+  "name": "@recaptcha/react",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/recaptcha-react.umd.cjs",
+  "module": "./dist/recaptcha-react.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/recaptcha-react.js",
+      "require": "./dist/recaptcha-react.umd.cjs",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meiyerDev/recaptcha.git",
+    "directory": "packages/@recaptcha-react"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build:types": "tsc --project tsconfig.build.json --declaration",
+    "build": "tsc && vite build && npm run build:types"
+  },
+  "dependencies": {
+    "@recaptcha/core": "^0.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}

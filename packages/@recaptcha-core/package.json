@@ -1,0 +1,32 @@
+{
+  "name": "@recaptcha/core",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/recaptcha-core.umd.cjs",
+  "module": "./dist/recaptcha-core.js",
+  "exports": {
+    ".": {
+      "import": "./dist/recaptcha-core.js",
+      "require": "./dist/recaptcha-core.umd.cjs",
+      "types": "./dist/types/core.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meiyerDev/recaptcha.git",
+    "directory": "packages/@recaptcha-core"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build:types": "tsc --project tsconfig.build.json --declaration",
+    "build": "tsc && vite build && npm run build:types"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "typescript": "^5.2.2",
+    "vite-plugin-dts": "^3.9.1",
+    "vite": "^5.2.0"
+  }
+}

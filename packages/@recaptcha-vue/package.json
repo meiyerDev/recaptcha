@@ -1,0 +1,36 @@
+{
+  "name": "@recaptcha/vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/recaptcha-vue.umd.cjs",
+  "module": "./dist/recaptcha-vue.js",
+  "exports": {
+    ".": {
+      "import": "./dist/recaptcha-vue.js",
+      "require": "./dist/recaptcha-vue.umd.cjs",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meiyerDev/recaptcha.git",
+    "directory": "packages/@recaptcha-vue"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build:types": "tsc --project tsconfig.build.json --declaration",
+    "build": "tsc && vite build && npm run build:types"
+  },
+  "dependencies": {
+    "@recaptcha/core": "^0.0.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
