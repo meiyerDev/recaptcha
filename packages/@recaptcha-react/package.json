@@ -1,7 +1,7 @@
 {
   "name": "@recaptcha/react",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "files": ["dist"],
   "main": "./dist/recaptcha-react.umd.cjs",
