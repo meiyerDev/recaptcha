@@ -24,12 +24,13 @@
     "build:types": "tsc --project tsconfig.build.json --declaration",
     "build": "tsc && vite build && npm run build:types"
   },
-  "dependencies": {
-    "@recaptcha/core": "^0.0.0",
+  "peerDependencies": {
+    "@recaptcha/core": "^0.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@recaptcha/core": "^0.0.1",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
@@ -38,6 +39,8 @@
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   }
