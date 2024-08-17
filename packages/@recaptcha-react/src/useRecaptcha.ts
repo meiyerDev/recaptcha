@@ -7,7 +7,7 @@ export const useRecaptcha = <T extends string | HTMLDivElement | null>(elementRe
 
     useEffect(() => {
         if (!elementRef.current) {
-        return;
+            return;
         }
 
         install(elementRef.current, options);
